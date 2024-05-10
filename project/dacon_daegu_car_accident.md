@@ -37,12 +37,18 @@ ELCO의 개별적 요소들을 각각의 모델들로 예측해서 통합하여 
 
 
 ## 프로젝트 결과  
-Public Score: 0.42844
-Private Score: 0.42857
+Public Score: 0.42844  
+Private Score: 0.42857  
+
+총 914명 참여  
+Public 등수: 269등  
+Private 등수: 215등  
+
 
 1위의 스코어들  
-Public Score: 0.42529
-Private Score: 0.4253
+Public Score: 0.42529  
+Private Score: 0.4253  
+
 
 ## 프로젝트 회고  
 파생 변수 생성이 중요하다  
