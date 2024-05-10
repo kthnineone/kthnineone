@@ -7,6 +7,7 @@ https://velog.io/@oka1313/Github-%EA%B9%83%ED%97%88%EB%B8%8C-%ED%94%84%EB%A1%9C%
 https://github.com/rzashakeri/beautify-github-profile?tab=readme-ov-file
 https://github.com/Envoy-VC/awesome-badges
 https://github.com/Ileriayo/markdown-badges
+https://github.com/MikeCodesDotNET/ColoredBadges
 -->
 Here are some ideas to get you started:
 
@@ -14,6 +15,8 @@ Here are some ideas to get you started:
 
 <img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white"> <!--R-->
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"> <!--Python-->
+<img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white"> <!--SQLite-->
+<img src="https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white"> <!--Selenium-->
 <img src="https://img.shields.io/badge/WSL-0a97f5?style=for-the-badge&logo=linux&logoColor=white"> <!--WSL-->
 <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"> <!--VS Code-->
 
