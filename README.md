@@ -18,7 +18,9 @@ Blog: https://arsetstudium.tistory.com/
 + NLP
 
 **Projects**  
-+ project1: 
++ Project1: link 
+
+All projects: project_main_link
 
 **Skills**  
 
