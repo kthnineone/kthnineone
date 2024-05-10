@@ -22,6 +22,7 @@ Here are some ideas to get you started:
 
 
 **AI Skills**  
+
 <img src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white"> <!--Numpy-->
 <img src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white"> <!--Pandas-->
 <img src="https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white"> <!--Scipy-->
