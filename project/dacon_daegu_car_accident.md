@@ -56,6 +56,7 @@ K-means, HAC, DBSCAN, HDBSCAN 수행.
 
 전국 데이터 MLP 모델 → Best Val RMSLE: 0.4392, Train RMSLE: 0.1098 
 
+12/12 정리
 - 대구 교통 사고 데이터. train에만 존재하고 test에 없는 데이터(컬럼들)가 존재.
 - 최종 타겟 값은 ECLO인데, 사망자, 중상자, 경상자, 부상자의 Weighted Sum.
 - train과 test 모두 가지는 데이터만 활용하여 RF, XGB, LGBM, CatB를 활용하여 성능 측정
@@ -104,6 +105,8 @@ Private Score: 0.4253
 파생 변수 생성이 중요하다  
 1, 2위 팀을 보니 공공 데이터의 추가가 중요하다.  
 종합하자면 데이터의 질과 양이 매우 중요하다  
-
+Categorical Data를 integer들로 처리하지 않고 모두 One-Hot으로 처리하는 모델들이 많았다.
+Categorical Data를 Target Encoder로 처리하는 경우도 많았다.
+AutoML, 트리기반 모델들이 주로 많이 쓰인다.
 
 
