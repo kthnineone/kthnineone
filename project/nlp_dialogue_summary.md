@@ -18,11 +18,12 @@ Puiblic과 Private은 각각 Random하게 5:5로 나뉜다.
 + Scikit-Learn
 + Numpy
 + Pandas
-+ XGBoost
-+ LightGBM
-+ optuna
 + matplotlib
-
++ wandb
++ tqdm
++ pytorch_lightning
++ transformers[torch]
++ rouge
 
 ## 프로젝트 진행 단계  
 1. 데이터 확인 및 데이터 전처리    
@@ -37,37 +38,49 @@ Puiblic과 Private은 각각 Random하게 5:5로 나뉜다.
 
 범주형 변수: '시군구', '번지', '본번', '부번', '아파트명', '도로명', 'k-단지분류(아파트,주상복합등등)' 등등 총 34개  
 
-구별 아파트 가격은 boxplot으로 볼 때 차이가 있다.  
+- EasyDataAugmentation (EDA)
+  - RandomDeletion (RD)
+  - RandomInsertion (RI)
+  - SynonymReplacement (SR)
+  - RandomSwap (RS)
+- AEasierDataAugmentation (AEDA)
 
-2022년을 기점으로 약간 경향이 달라지긴 하지만 전체적으로는 아파트 실거래가는 우상향한다.  
+```
+from koeda import AEasierDataAugmentation
+from koeda import EasyDataAugmentation
 
-관련이 없어 보이는 변수 'k-전화번호', 'k-팩스번호', 'k-관리방식', 'k-수정일자', '고용보험관리번호', '시군구', '계약년월' 삭제 
-결측치가 100만개 이상인 변수들 : '해제사유발생일', '단지소개기존clob', 'k-135㎡초과', 'k-홈페이지', 'k-등록일자' 삭제
+eda = EasyDataAugmentation(
+              morpheme_analyzer = "Okt",
+              alpha_sr = 0.1,
+              alpha_ri = 0.1,
+              alpha_rs = 0.1,
+              prob_rd = 0.1
+            )
 
-평수에 따라서 소형, 중형, 대형으로 분류한 컬럼 추가 
-평균면적 이상치 삭제 안함, 강남구 컬럼 추가 안함
+repetition = 1
 
-면적, X좌표, Y좌표, 계약년, 계약월, 해당 년의 평균가격, 해당 월의 평균가격
-2020~2023년 데이터 사용
+aeda = AEasierDataAugmentation(
+        morpheme_analyzer="Okt", punctuations=[".", ",", "!", "?", ";", ":"]
+    )
 
-전용면적, 층, 건설년도, 계약년도, 계약월, X, Y 좌표, 연도별 평균, 월별 평균, 구별 평균, 동별 평균, 도로별 평균 적용 예정
-데이터는 모두 2020년대 데이터, Train은 2020, 2021, 2022 데이터, Val은 2023년 데이터
-개별 가격 예측
-
-전용면적, 층, 건설년도, 계약년도, 계약월, X, Y 좌표, 연도별 평균, 월별 평균, 구별 평균, 동별 평균, 도로별 평균 적용 예정
-데이터는 모두 2020년대 데이터, Train은 2020, 2021, 2022 데이터, Val은 2023년 데이터
-개별 가격 예측
-
-groupby에서 면적의 카테고리를 변경
-면적을 소형, 중소형, 중형, 중대형, 대형, 초대형으로 나눠서 mean으로 target인 price 생성
-년, 월, 일, 소수점만 반영한 x, y 좌표, 면적을 이용.
+print("원문:", ex_data)
+# First, apply EDA
+result = eda(ex_data, repetition=repetition)
+print("EDA:", result)
+# Second, apply AEDA
+result = aeda(ex_data, p=0.3, repetition=repetition)
+print("AEDA:", result)
+```
 
 
 ### 3. 모델 선정  
 
-Random Forest (RF), XGBoost (XGB), Light GBM (LGBM)  
+KoBART 
 
-XGB는 5-Fold와 optuna 사용시 시간이 너무 오래 소요되어 더 빠른 LGBM으로 선택후 고정  
+Text Summarization에는 Machine Reading Comprehension과
+Text Generation 모두가 필요한 Encoder-Decoder 모델인 KoBART를 사용했습니다.
+
+huggingface의 digit82/kobart-summarization.  
 
 
 ### 4. 모델 적용 상세  
@@ -81,11 +94,11 @@ XGB는 5-Fold와 optuna 사용시 시간이 너무 오래 소요되어 더 빠�
 
 ## 프로젝트 결과  
 총 9개팀 참여  
-Public 등수: 3등  
-Private 등수: 4등  
+Public 등수: 8등  
+Private 등수: 7등  
 
-Public Score: 18200.0390
-Final(Public + Private) Score: 16173.2293
+Public Score: 41.9246
+Final(Public + Private) Score: 39.1958
 
 ## 프로젝트 회고  
 + 초반 인덱스 문제로 인해서 리더보드와 Validation RMSE의 괴리가 심했다. 이때 Validation을 믿고 진행했어야 정상적으로 돌아온 리더보드에서 좋은 성능을 보였을 듯 하다. 다른 대회에 또 참여할 때 Validation을 믿고 실험을 수행해야겠다.
