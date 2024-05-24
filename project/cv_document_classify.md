@@ -1,18 +1,14 @@
-# Document Type Classification  
+# Document Image Type Classification  
 ## 프로젝트 개요
 패스트캠퍼스&업스테이지 AI Lab 1기 자체 대회  
 
-서울의 아파트 실거래가를 예측하는 대회  
-
-2007년 1월부터 2023년 9월까지의 데이터  
-학습 데이터: 200701 - 202306  
-평가 데이터: 202307 - 202309  
+다양한 종류의 문서 이미지를 입력 받아 17개의 클래스 중 정답을 예측하는 작업  
 
 Puiblic과 Private은 각각 Random하게 5:5로 나뉜다.
 
 추가 데이터로 지하철역, 버스정류장 정보 등이 존재  
 
-평가 지표는 RMSE  
+평가 지표는 Macro F1  
 
 팀 프로젝트: 5명   
 역할: EDA, 피쳐 엔지니어링, 모델링  
@@ -24,11 +20,9 @@ Puiblic과 Private은 각각 Random하게 5:5로 나뉜다.
 + Scikit-Learn
 + Numpy
 + Pandas
-+ XGBoost
-+ LightGBM
-+ optuna
 + matplotlib
-
++ albumentations
++ PyTorch
 
 ## 프로젝트 진행 단계  
 1. 데이터 확인 및 데이터 전처리    
@@ -39,41 +33,48 @@ Puiblic과 Private은 각각 Random하게 5:5로 나뉜다.
 
 ## 프로젝트 세부 과정  
 ### 1. 데이터 확인 및 전처리  
-연속형 변수: '전용면적', '계약년월', '계약일', '층', '건축년도', 'k-전체동수', 'k-전체세대수', 'target' 등등 총 18개  
+1570장의 학습 이미지를 통해 3140장의 평가 이미지를 예측
+데이터가 어떤 class를 가지고 있는지 설명하는 meta.csv와 각 이미지 파일과 label을 매치한 train.csv 제공  
 
-범주형 변수: '시군구', '번지', '본번', '부번', '아파트명', '도로명', 'k-단지분류(아파트,주상복합등등)' 등등 총 34개  
+```0 계좌번호, 1 임신 의료비 지급 신청서, 2 자동차 계기판, 3 입·퇴원 확인서, 4 진단서, 5 운전면허증,
+6 진료비 영수증, 7 외래 진료 증명서, 8 국민 신분증, 9 여권, 10 지불 확인서, 11 의약품 영수증, 12 처방전,
+13 이력서, 14 의견 진술, 15 자동차 등록증, 16 자동차 등록판```
 
-구별 아파트 가격은 boxplot으로 볼 때 차이가 있다.  
+car_dashboard와 vehicle_registration_plate가 이질적, 나머지 classes의 이미지는 모두 문서의 형태
 
-2022년을 기점으로 약간 경향이 달라지긴 하지만 전체적으로는 아파트 실거래가는 우상향한다.  
+test data는 flip, rotate, mixup 등이 되어 있는 문서 이미지
 
-관련이 없어 보이는 변수 'k-전화번호', 'k-팩스번호', 'k-관리방식', 'k-수정일자', '고용보험관리번호', '시군구', '계약년월' 삭제 
-결측치가 100만개 이상인 변수들 : '해제사유발생일', '단지소개기존clob', 'k-135㎡초과', 'k-홈페이지', 'k-등록일자' 삭제
+**16 Offline Augmentations:**  
+다양하게 변형된 features를 학습하여 robust한 모델을 만들기 위해 offline 방법 적용.
 
-평수에 따라서 소형, 중형, 대형으로 분류한 컬럼 추가 
-평균면적 이상치 삭제 안함, 강남구 컬럼 추가 안함
 
-면적, X좌표, Y좌표, 계약년, 계약월, 해당 년의 평균가격, 해당 월의 평균가격
-2020~2023년 데이터 사용
++ HorizontalFlip
++ VerticalFlip
++ ShiftScaleRotate
++ Grayscale
++ ColorJitter
++ Blur
++ MedianBlur
++ Spatter
++ Defocus
++ ZoomBlur
++ OpticalDistortion 2장
++ Perspective 2장
++ Rotate 2장
 
-전용면적, 층, 건설년도, 계약년도, 계약월, X, Y 좌표, 연도별 평균, 월별 평균, 구별 평균, 동별 평균, 도로별 평균 적용 예정
-데이터는 모두 2020년대 데이터, Train은 2020, 2021, 2022 데이터, Val은 2023년 데이터
-개별 가격 예측
+### 2. EDA
 
-전용면적, 층, 건설년도, 계약년도, 계약월, X, Y 좌표, 연도별 평균, 월별 평균, 구별 평균, 동별 평균, 도로별 평균 적용 예정
-데이터는 모두 2020년대 데이터, Train은 2020, 2021, 2022 데이터, Val은 2023년 데이터
-개별 가격 예측
-
-groupby에서 면적의 카테고리를 변경
-면적을 소형, 중소형, 중형, 중대형, 대형, 초대형으로 나눠서 mean으로 target인 price 생성
-년, 월, 일, 소수점만 반영한 x, y 좌표, 면적을 이용.
++ labeling이 애매한 데이터들 존재
++ 대부분의 모델이 3, 7, 13번 class를 자주 혼동하는 경향을 보임
++ Scikit-Learn의 Confusion Matrix의 시각화로 잘 분류되는 클래스와 자주 혼동되는 클래스 확인
 
 
 ### 3. 모델 선정  
 
-Random Forest (RF), XGBoost (XGB), Light GBM (LGBM)  
-
-XGB는 5-Fold와 optuna 사용시 시간이 너무 오래 소요되어 더 빠른 LGBM으로 선택후 고정  
+EfficientNet V2 M:
+Classifier만 학습하는 Transfer Learning과 전체를 학습하는 Fine-Tuning 모두 적용
+Two Stage Model:
+첫 번째 EfficientNet V2 M으로 자동차계기판, 자동차번호판, 문서를 분류. 두 번째 EfficientNet V2 M으로 나머지 15가지의 문서를 분류. 
 
 
 ### 4. 모델 적용 상세  
