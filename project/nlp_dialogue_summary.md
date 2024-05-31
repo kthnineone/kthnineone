@@ -90,8 +90,13 @@ Text Generation 모두가 필요한 Encoder-Decoder 모델인 KoBART를 사용
 huggingface의 digit82/kobart-summarization.  
 
 
-#### 5. 최종 제출   
- 
+### 4. 최종 제출   
+개인 최고 스코어 for Evaluation data  
+ROGUE-1: 0.3758  
+ROGUE-2: 0.1402  
+ROGUE-L: 0.3621  
+
+Baseline과 큰 차이가 없다.  
 
 
 ## 프로젝트 결과  
@@ -99,8 +104,17 @@ huggingface의 digit82/kobart-summarization.
 Public 등수: 8등  
 Private 등수: 7등  
 
-Public Score: 41.9246
-Final(Public + Private) Score: 39.1958
+Public Score:  
+ROGUE-1: 0.5128  
+ROGUE-2: 0.3191  
+ROGUE-L: 0.4258  
+Final_Result: 41.9246   
+
+Final(Public + Private) Score:  
+ROGUE-1: 0.4967  
+ROGUE-2: 0.2858  
+ROGUE-L: 0.3933  
+Final_Result: 39.1958   
 
 ## 프로젝트 회고  
 + Wandb를 처음 사용해봤는데 굉장히 유용한 툴이라 앞으로도 자주 사용할 듯 싶다. 
