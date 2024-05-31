@@ -1,31 +1,25 @@
-# Dialogue Summarization | 일상 대화 요약 
+# 구글 트렌드와 뉴스 크롤링  
 ## 프로젝트 개요
-패스트캠퍼스&업스테이지 AI Lab 1기 자체 대회  
 
-일상 대화를 바탕으로 요약문을 생성하는 모델을 구축함이 목적으로 회의, 일상 대화 등 다양한 주제를 가진 대화문과, 이에 대한 요약문을 포함
++ 세계의 이슈를 알기 위해서 한국과 G7국가의 구글 트렌드 수집 (중국 제외)  
++ AI와 관련된 구글 뉴스 수집  
 
-Puiblic과 Private은 각각 Random하게 5:5로 나뉜다.
-
-평가 지표는 ROGUE (Recall-Oriented Understudy for Gisting Evaluation)  
-
-
-팀 프로젝트: 5명   
-역할: EDA, 피쳐 엔지니어링, 모델링  
-진행기간: 2024.03.08 ~ 2024.03.20  
+개인 프로젝트   
+역할: 크롤러 개발 및 DB 형태로 저장  
+진행기간: 2023.10.25 ~ 2023.10.31  
 소속 : 패스트캠퍼스&업스테이지 AI Lab 1기 (AI Lab 2기)  
 
 
 ## 기술 스택
-+ Scikit-Learn
-+ Numpy
-+ Pandas
-+ matplotlib
-+ wandb
-+ tqdm
-+ pytorch_lightning
-+ transformers[torch]
-+ koeda
-+ rouge
++ os
++ time
++ argparse
++ json
++ requests
++ selenium
++ googletrans
++ sqlite3
++ pandas
 
 ## 프로젝트 진행 단계  
 1. 데이터 확인 및 데이터 전처리    
@@ -37,78 +31,17 @@ Puiblic과 Private은 각각 Random하게 5:5로 나뉜다.
 ## 프로젝트 세부 과정  
 ### 1. 데이터 확인 및 전처리  
 
-여러 명이 같이 대화하는 텍스트  
-ROGUE-N의 측정방법으로 예측과 정답의 단어가 얼마나 겹치는 지를 평가한다.  
-따라서 모델이 최대한 정답 그 자체를 그대로 생성하도록 학습한다.  
-같은 뜻이지만 다른 문장을 생성하지 않는다.  
 
-
-**텍스트 데이터에 대한 증강 기법 적용**  
-
-- EasyDataAugmentation (EDA)
-  - RandomDeletion (RD)
-  - RandomInsertion (RI)
-  - SynonymReplacement (SR)
-  - RandomSwap (RS)
-- AEasierDataAugmentation (AEDA)
-
-```
-from koeda import AEasierDataAugmentation
-from koeda import EasyDataAugmentation
-
-eda = EasyDataAugmentation(
-              morpheme_analyzer = "Okt",
-              alpha_sr = 0.1,
-              alpha_ri = 0.1,
-              alpha_rs = 0.1,
-              prob_rd = 0.1
-            )
-
-repetition = 1
-
-aeda = AEasierDataAugmentation(
-        morpheme_analyzer="Okt", punctuations=[".", ",", "!", "?", ";", ":"]
-    )
-
-print("원문:", ex_data)
-# First, apply EDA
-result = eda(ex_data, repetition=repetition)
-print("EDA:", result)
-# Second, apply AEDA
-result = aeda(ex_data, p=0.3, repetition=repetition)
-print("AEDA:", result)
-```
-
-
-### 3. 모델 선정  
+### 2. 모델 선정  
 
 KoBART 
 
-Text Summarization에는 Machine Reading Comprehension과
-Text Generation 모두가 필요한 Encoder-Decoder 모델인 KoBART를 사용했습니다.
-
-huggingface의 digit82/kobart-summarization.  
-
-
-### 4. 모델 적용 상세  
-#### 4.1. 데이터 별 모델 적용  
-
-
-
-#### 5. 최종 제출   
- 
 
 
 ## 프로젝트 결과  
-총 9개팀 참여  
-Public 등수: 8등  
-Private 등수: 7등  
 
-Public Score: 41.9246
-Final(Public + Private) Score: 39.1958
 
 ## 프로젝트 회고  
-+ 초반 인덱스 문제로 인해서 리더보드와 Validation RMSE의 괴리가 심했다. 이때 Validation을 믿고 진행했어야 정상적으로 돌아온 리더보드에서 좋은 성능을 보였을 듯 하다. 다른 대회에 또 참여할 때 Validation을 믿고 실험을 수행해야겠다.
-+ 실제 업무에서도 KPI의 설정은 정상적이더라도, 여러 이슈로 인해 성능 모니터링 대쉬보드 등이 잘못될 수 있다. 이를 유의해야겠다고 생각했다.
-+ Kaggle이나 다른 레퍼런스를 추가로 찾아봤으면 좋았을듯하다.
-+ 다른 팀원들과 토론하면서 인사이트를 얻을 수 있었고 각자 EDA나 수집한 데이터를 공유하여 시간을 아낄 수 있었다.
++ 초반 인덱스 문제로
+
++ 
