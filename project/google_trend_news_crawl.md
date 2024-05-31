@@ -6,11 +6,12 @@
 
 Puiblic과 Private은 각각 Random하게 5:5로 나뉜다.
 
-평가 지표는 RMSE  
+평가 지표는 ROGUE (Recall-Oriented Understudy for Gisting Evaluation)  
+
 
 팀 프로젝트: 5명   
 역할: EDA, 피쳐 엔지니어링, 모델링  
-진행기간: 2024.01.07 ~ 2024.01.25  
+진행기간: 2024.03.08 ~ 2024.03.20  
 소속 : 패스트캠퍼스&업스테이지 AI Lab 1기 (AI Lab 2기)  
 
 
@@ -23,6 +24,7 @@ Puiblic과 Private은 각각 Random하게 5:5로 나뉜다.
 + tqdm
 + pytorch_lightning
 + transformers[torch]
++ koeda
 + rouge
 
 ## 프로젝트 진행 단계  
@@ -34,9 +36,14 @@ Puiblic과 Private은 각각 Random하게 5:5로 나뉜다.
 
 ## 프로젝트 세부 과정  
 ### 1. 데이터 확인 및 전처리  
-연속형 변수: '전용면적', '계약년월', '계약일', '층', '건축년도', 'k-전체동수', 'k-전체세대수', 'target' 등등 총 18개  
 
-범주형 변수: '시군구', '번지', '본번', '부번', '아파트명', '도로명', 'k-단지분류(아파트,주상복합등등)' 등등 총 34개  
+여러 명이 같이 대화하는 텍스트  
+ROGUE-N의 측정방법으로 예측과 정답의 단어가 얼마나 겹치는 지를 평가한다.  
+따라서 모델이 최대한 정답 그 자체를 그대로 생성하도록 학습한다.  
+같은 뜻이지만 다른 문장을 생성하지 않는다.  
+
+
+**텍스트 데이터에 대한 증강 기법 적용**  
 
 - EasyDataAugmentation (EDA)
   - RandomDeletion (RD)
