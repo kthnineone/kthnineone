@@ -71,7 +71,7 @@ Heatmap
 
 ![image](https://github.com/kthnineone/kthnineone/blob/main/images/jeju_dong_visitor_by_nation.PNG)  
 
-(지도 시각화의 경우 팀원의 수행 결과물)  
+**(지도 시각화의 경우 팀원의 수행 결과물)**  
 
 + 인기 있는 읍면동의 경우 대체로 자연, 액티비티, 문화를 즐길 수 있는 지역들이다.  
 
