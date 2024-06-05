@@ -49,6 +49,20 @@ content_ko, content_en 항목으로 추가하여 저장
 
 ## 프로젝트 결과  
 
+**구글 뉴스 저장 결과**  
+
+![image](https://github.com/kthnineone/kthnineone/tree/main/images/google_news_db.PNG)  
+
+**구글 트렌드 저장 결과**  
+한국  
+
+![image](https://github.com/kthnineone/kthnineone/tree/main/images/google_trend_ko_db.PNG)  
+
+일본  
+
+![image](https://github.com/kthnineone/kthnineone/tree/main/images/google_trend_ja_db.PNG)  
+
+
 
 ## 프로젝트 회고  
 + 크롤링한 내용을 토대로 wordcloud나 국가별 트렌드 비교, 시간차를 비교하면 인사이트를 얻을 수 있을듯 하다.  
