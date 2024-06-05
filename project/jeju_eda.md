@@ -67,7 +67,7 @@ Heatmap
 
 읍면동별 국가별 방문자 수  
 
-![image](https://github.com/kthnineone/kthnineone/blob/main/images/jeju_dong_visitor_by_nation_treemap.PNG) 
+![image](https://github.com/kthnineone/kthnineone/blob/main/images/jeju_dong_visitor_by_nation_treemap.png) 
 
 ![image](https://github.com/kthnineone/kthnineone/blob/main/images/jeju_dong_visitor_by_nation.PNG)  
 
@@ -89,6 +89,7 @@ Heatmap
 
 ## 프로젝트 회고  
 + 팀원이 geopandas와 folium을 활용하여 지도 시각화를 수행하였는데 이를 나중에 활용해봐야겠다.
++ plotly는 dash와 연계하여 대쉬보드를 만들 수도 있는데 이렇게 발전시켜 보는 방향도 고려할만하다.  
 
 
 
