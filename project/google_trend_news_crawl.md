@@ -51,16 +51,16 @@ content_ko, content_en 항목으로 추가하여 저장
 
 **구글 뉴스 저장 결과**  
 
-![image](https://github.com/kthnineone/kthnineone/tree/main/images/google_news_db.PNG)  
+![image](https://github.com/kthnineone/kthnineone/blob/main/images/google_news_db.PNG)  
 
 **구글 트렌드 저장 결과**  
 한국  
 
-![image](https://github.com/kthnineone/kthnineone/tree/main/images/google_trend_ko_db.PNG)  
+![image](https://github.com/kthnineone/kthnineone/blob/main/images/google_trend_ko_db.PNG)  
 
 일본  
 
-![image](https://github.com/kthnineone/kthnineone/tree/main/images/google_trend_ja_db.PNG)  
+![image](https://github.com/kthnineone/kthnineone/blob/main/images/google_trend_ja_db.PNG)  
 
 
 
