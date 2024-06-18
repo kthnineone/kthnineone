@@ -3,7 +3,7 @@ main page
 
 ## Computer Vision  
 문서 이미지 분류 프로젝트: 
-[🔗 link](https://github.com/kthnineone/kthnineone/blob/main/project/cv_document_classify.md)  
+[🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/project/cv_document_classify.md)  
 
 ## NLP  
 한국어 일상 대화 요약  
