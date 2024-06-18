@@ -19,6 +19,7 @@ https://github.com/MikeCodesDotNET/ColoredBadges
 **Projects**  
 + 문서 이미지 분류 프로젝트: [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/project/cv_document_classify.md)
 + 한국어 일상 대화 요약: [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/project/nlp_dialogue_summary.md)
++ 네이버 베스트도전 웹툰 NLP 분석: [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/project/naver_webtoon_nlp_analysis.md)
 + 제주도 관광 활성화를 위한 시각화 EDA: [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/project/jeju_eda.md)
 + 구글 트렌드와 뉴스 크롤링: [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/project/google_trend_news_crawl.md)
 
