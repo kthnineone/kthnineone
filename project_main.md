@@ -12,8 +12,7 @@ main page
 과학지식 질의 응답 시스템 구축 (RAG = IR (검색엔진) + LLM) [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/project/ir_science_rag.md) :  
 + 과학지식 질의에 대해 IR(검색) 시스템인 Elasticsearch와 LLM인 OpenAI를 동시에 활용하여 답변  
 
-네이버 베스트도전 웹툰 NLP 분석 [🔗 Details] 
- (https://github.com/kthnineone/kthnineone/blob/main/project/naver_webtoon_nlp_analysis.md) :  
+네이버 베스트도전 웹툰 NLP 분석 [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/project/naver_webtoon_nlp_analysis.md) :  
 + 웹툰 소개, 장르, 연령등급 등을 활용하여 잠재적 미디어 믹스 대상 예측  
 + 미디어 믹스란 웹툰을 애니메이션, 드라마, 영화 등으로 만들어 판매함을 의미한다.  
 
