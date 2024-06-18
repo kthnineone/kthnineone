@@ -2,9 +2,8 @@
 main page 
 
 ## Computer Vision  
-문서 이미지 분류 프로젝트:   
-+ 다양한 종류의 문서 이미지를 입력 받아 17개의 클래스 중 정답을 예측
-+ [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/project/cv_document_classify.md)  
+문서 이미지 분류 프로젝트 [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/project/cv_document_classify.md):   
++ 다양한 종류의 문서 이미지를 입력 받아 17개의 클래스 중 정답을 예측 
 
 ## NLP  
 한국어 일상 대화 요약:  
