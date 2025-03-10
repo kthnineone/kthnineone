@@ -17,9 +17,10 @@ https://github.com/MikeCodesDotNET/ColoredBadges
 + NLP  
 
 **Projects**  
++ LangChain 프로젝트: [🔗 Details](https://github.com/kthnineone/llm-practice)
 + 문서 이미지 분류 프로젝트: [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/project/cv_document_classify.md)
-+ 한국어 일상 대화 요약: [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/project/nlp_dialogue_summary.md)
-+ 네이버 베스트도전 웹툰 NLP 분석: [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/project/naver_webtoon_nlp_analysis.md)
++ LLM 모델 연구: [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/mementoai_project/llm_research.md)
++ Tableau 대시보드 구축: [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/mementoai_project/tableau_draft.md)
 + 제주도 관광 활성화를 위한 시각화 EDA: [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/project/jeju_eda.md)
 + 구글 트렌드와 뉴스 크롤링: [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/project/google_trend_news_crawl.md)
 
@@ -37,7 +38,7 @@ Paper analysis and implementations written in Korean [Blog Link](https://arsetst
 <img src="https://img.shields.io/badge/WSL-0a97f5?style=for-the-badge&logo=linux&logoColor=white"> <!--WSL-->
 <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"> <!--VS Code-->
 <img src="https://img.shields.io/badge/RStudio-75AADB?style=for-the-badge&logo=RStudio&logoColor=white"> <!--R Studio-->
-
+Cursor  
 
 **AI Skills**  
 
