@@ -6,6 +6,11 @@ main page
 + 다양한 종류의 문서 이미지를 입력 받아 17개의 클래스 중 정답을 예측 
 
 ## NLP  
+LangChain 실습 (2025.01 - Present) [🔗 Details](https://github.com/kthnineone/llm-practice/blob/main/README.md):   
++ LangChain을 이용한 Prompt Engineering  
++ LangChain을 이용한 RAG  
++ Finance 분야의 LLM Fine-Tuning  
+
 LLM 모델 연구 (2024.10.02 ~ 2025.01.10) [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/mementoai_project/llm_research.md):  
 + 파운데이션 모델 연구  
 + Multi Paraellel GPU로 학습  
