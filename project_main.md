@@ -6,6 +6,10 @@ main page
 + 다양한 종류의 문서 이미지를 입력 받아 17개의 클래스 중 정답을 예측 
 
 ## NLP  
+LLM 모델 연구 (2024.10.02 ~ 2025.01.10) [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/mementoai_project/llm_research.md):  
++ 파운데이션 모델 연구  
++ Multi Paraellel GPU로 학습  
+
 한국어 일상 대화 요약 (2024.03.08 - 2024.03.20) [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/project/nlp_dialogue_summary.md):  
 + 일상 대화를 바탕으로 요약문을 생성하는 모델을 구축함이 목적으로 회의, 일상 대화 등 다양한 주제를 가진 대화문과, 이에 대한 요약문을 포함   
 
@@ -28,12 +32,20 @@ main page
 + 서울의 아파트 실거래가를 2007년부터 2023년까지의 데이터를 활용하여 예측하는 대회  
 
 
-## EDA 시각화  
+## EDA 및 시각화  
+시간대별 고객 안내 최적화 (2024.08.15 ~ 2024.09.30) [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/mementoai_project/tableau_draft.md):
++ 매출, 고객수, 상품 등의 내용 시각화
+
+
 제주도 관광 활성화를 위한 시각화 EDA (2023.11.06 - 2023.11.15) [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/project/jeju_eda.md):  
 + 공공데이터를 활용한 시각화를 통해 제주도 방문객 파악 및 관광 상품 개발 및 홍보 방향 제시  
 
 
 ## Etc   
+시간대별 고객 안내 최적화 (2024.07.03 ~ 2024.07.14) [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/mementoai_project/optim_reservation.md):
++ 병원 고객의 기다림 최소화 목적과 병실 활용률 최적화  
+
+
 구글 트렌드와 뉴스 크롤링 (2023.10.25 - 2023.10.31) [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/project/google_trend_news_crawl.md):
 + 세계의 이슈를 알기 위해서 한국과 G7국가의 구글 트렌드 수집 (캐나다 제외) 후 db의 테이블 형태로 저장  
 + AI와 관련된 구글 뉴스 수집 후 db의 테이블 형태로 저장  
@@ -47,7 +59,7 @@ main page
 Collaborative Social Metric Learning in Trust Network for Recommender Systems Paper, IJWIS (2023.01.20) \[SCIE\]  
 
 ## Time Series  
-HiPPO-KAN Paper, ACM ICAIF Workshop 2024 (2024.10.22)  
+HiPPO-KAN Paper, ACM ICAIF Workshop 2024 (2024.10.22)  [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/mementoai_project/hippo_kan_paper.md) :  
 
 
 
