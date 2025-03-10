@@ -38,7 +38,7 @@ Paper analysis and implementations written in Korean [Blog Link](https://arsetst
 <img src="https://img.shields.io/badge/WSL-0a97f5?style=for-the-badge&logo=linux&logoColor=white"> <!--WSL-->
 <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"> <!--VS Code-->
 <img src="https://img.shields.io/badge/RStudio-75AADB?style=for-the-badge&logo=RStudio&logoColor=white"> <!--R Studio-->
-Cursor  
+
 
 **AI Skills**  
 
