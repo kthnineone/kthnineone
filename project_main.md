@@ -38,7 +38,7 @@ LLM 모델 연구 (2024.10.02 ~ 2025.01.10) [🔗 Details](https://github.com/kt
 
 
 ## EDA 및 시각화  
-시간대별 고객 안내 최적화 (2024.08.15 ~ 2024.09.30) [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/mementoai_project/tableau_draft.md):
+Tableau를 활용한 대시보드 구축 (2024.08.15 ~ 2024.09.30) [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/mementoai_project/tableau_draft.md):
 + 매출, 고객수, 상품 등의 내용 시각화
 
 
@@ -47,7 +47,7 @@ LLM 모델 연구 (2024.10.02 ~ 2025.01.10) [🔗 Details](https://github.com/kt
 
 
 ## Etc   
-Tableau를 활용한 대시보드 구축 (2024.08.15 ~ 2024.09.30) [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/mementoai_project/optim_reservation.md):
+시간대별 고객 안내 최적화 (2024.07.03 ~ 2024.07.14) [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/mementoai_project/optim_reservation.md):
 + 병원 고객의 기다림 최소화 목적과 병실 활용률 최적화  
 
 
