@@ -8,7 +8,7 @@ main page
 뷰티컨설팅 (2024.07.18 ~ 2024.09.30)  
 + 얼굴형 분류 ML 알고리즘 개발
 + 얼굴형 피쳐 전처리
-+ Stable-Diffusion WebUI를 활용한 프롬프트 엔지니어링  
++ Stable-Diffusion WebUI를 활용한 프롬프트 엔지니어링으로 얼굴형에 맞는 헤어 스타일 추천   
 
 ## NLP  
 LangChain 실습 (2025.01 - Present) [🔗 Details](https://github.com/kthnineone/llm-practice):   
