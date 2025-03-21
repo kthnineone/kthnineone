@@ -3,7 +3,12 @@ main page
 
 ## Computer Vision  
 문서 이미지 분류 프로젝트 (2024.01.07 - 2024.01.25) [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/project/cv_document_classify.md):   
-+ 다양한 종류의 문서 이미지를 입력 받아 17개의 클래스 중 정답을 예측 
++ 다양한 종류의 문서 이미지를 입력 받아 17개의 클래스 중 정답을 예측
+
+뷰티컨설팅 (2024.07.18 ~ 2024.09.30)  
++ 얼굴형 분류 ML 알고리즘 개발
++ 얼굴형 피쳐 전처리
++ Stable-Diffusion WebUI를 활용한 프롬프트 엔지니어링  
 
 ## NLP  
 LangChain 실습 (2025.01 - Present) [🔗 Details](https://github.com/kthnineone/llm-practice):   
