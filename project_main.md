@@ -14,7 +14,12 @@ main page
 LangChain 실습 (2025.01 - Present) [🔗 Details](https://github.com/kthnineone/llm-practice):   
 + LangChain을 이용한 Prompt Engineering  
 + LangChain을 이용한 RAG  
-+ Finance 분야의 LLM Fine-Tuning  
++ Finance 분야의 LLM Fine-Tuning
+
+LLM-based Recommender Systems (2025.03 - Present) [🔗 Details](https://github.com/kthnineone/llm-recommend-movie)
++ LLM (Gemini API)을 활용한 영화 추천이 포함된 별점 사이트 구현  
++ React, Typescript, Vite로 프론트엔드 구현. 디자인은 배제. 
++ FastAPI를 사용해 영화 이름 검색, 유저 추천 아이템 생성, 유저 추천 아이템 검색, 별점 등록 구현 
 
 LLM 모델 연구 (2024.10.02 ~ 2025.01.10) [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/mementoai_project/llm_research.md):  
 + 파운데이션 모델 연구  
