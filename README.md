@@ -18,10 +18,10 @@ https://github.com/MikeCodesDotNET/ColoredBadges
 
 **Projects**  
 + LangChain 프로젝트: [🔗 Details](https://github.com/kthnineone/llm-practice)
++ LLM-based Recommender Systems (2025.03 - Present) [🔗 Details](https://github.com/kthnineone/llm-recommend-movie)
 + LLM 모델 연구: [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/mementoai_project/llm_research.md)
 + 문서 이미지 분류 프로젝트: [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/project/cv_document_classify.md)
 + Tableau 대시보드 구축: [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/mementoai_project/tableau_draft.md)
-+ 제주도 관광 활성화를 위한 시각화 EDA: [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/project/jeju_eda.md)
 + 구글 트렌드와 뉴스 크롤링: [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/project/google_trend_news_crawl.md)
 
 All projects: [🔗 Projects Main Page](https://github.com/kthnineone/kthnineone/blob/main/project_main.md)
