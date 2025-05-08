@@ -15,6 +15,8 @@ LangChain 실습 (2025.01 - Present) [🔗 Details](https://github.com/kthnineon
 + LangChain을 이용한 Prompt Engineering  
 + LangChain을 이용한 RAG  
 + Finance 분야의 LLM Fine-Tuning
++ 부서별로 직급별로 권한이 다를 때의 RAG
++ LLM을 활용한 Table와 Chart 생성  
 
 LLM-based Recommender Systems (2025.03 - Present) [🔗 Details](https://github.com/kthnineone/llm-recommend-movie)
 + LLM (Gemini API)을 활용한 영화 추천이 포함된 별점 사이트 구현  
