@@ -2,7 +2,7 @@
 ## 프로젝트 개요
 
 시계열 데이터 분석 성능을 높이고 lagging을 방지하기 위한 HiPPO 모델과 KAN 모델의 활용 논문 작성   
-논문 arxiv: (링크)[https://arxiv.org/abs/2410.14939] 
+논문 arxiv: [링크](https://arxiv.org/abs/2410.14939)
 
 팀 프로젝트: 5명   
 역할: 논문 작성 및 베이스라인 실험      
@@ -22,7 +22,7 @@
 2. 아이디어 회의        
 3. 베이스라인 실험       
 4. 논문 작성  
-5. ACM ICAIF 2024 Workshop에 게재      
+5. ACM ICAIF 2024 Workshop P2P에 게재      
 
 ## 프로젝트 결과  
 
