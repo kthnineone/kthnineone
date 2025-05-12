@@ -73,10 +73,12 @@ Tableau를 활용한 대시보드 구축 (2024.08.15 ~ 2024.09.30) [🔗 Details
 
 
 ## Recommender Systems  
-Collaborative Social Metric Learning in Trust Network for Recommender Systems Paper, IJWIS (2023.01.20) \[SCIE\]  
+Collaborative Social Metric Learning in Trust Network for Recommender Systems Paper, IJWIS (2023.01.20) \[SCIE\] ([🔗 Details](https://www.igi-global.com/article/collaborative-social-metric-learning-in-trust-network-for-recommender-systems/316535)): 
+
++ 사회적 관계를 활용하여 임베딩을 triplet loss로 학습하는 추천 시스템 
 
 ## Time Series  
 HiPPO-KAN Paper, ACM ICAIF Workshop 2024 (2024.10.22)  [🔗 Details](https://github.com/kthnineone/kthnineone/blob/main/mementoai_project/hippo_kan_paper.md) :  
 
-
++ 시계열 자료를 HiPPO와 KAN (Kolmogorov-Arnold Network)로 예측한 논문 
 
