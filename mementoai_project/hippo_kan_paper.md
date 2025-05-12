@@ -27,7 +27,7 @@
 ## 프로젝트 결과  
 
 + 예측 성능은 비슷하나 lagging 현상은 완화  
-+ ACM ICAIF 2024 Workshop에 게재   
++ ACM ICAIF 2024 Workshop P2P에 게재   
 + ACM ICAIF 2024 학회 참여  
 
 
