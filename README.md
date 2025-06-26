@@ -27,7 +27,7 @@ https://github.com/MikeCodesDotNET/ColoredBadges
 All projects: [🔗 Projects Main Page](https://github.com/kthnineone/kthnineone/blob/main/project_main.md)
 
 **Blog**  
-Paper analysis and implementations written in Korean [Blog Link](https://arsetstudium.tistory.com/)
+Paper analysis and implementations written in Korean [🔗 Blog Link](https://arsetstudium.tistory.com/)
 
 **Skills**  
 
