@@ -12,9 +12,9 @@ https://github.com/MikeCodesDotNET/ColoredBadges
 ## Data Scientist  
 
 **Interests**  
-+ Recommender Systems  
-+ Computer Vision  
-+ NLP  
++ Recommender Systems
++ NLP
++ Computer Vision    
 
 **Projects**  
 + LLM-based Music Recommender Chatbot [🔗 Details](https://github.com/kthnineone/streamlit-llm-music-recommend)
