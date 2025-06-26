@@ -11,6 +11,12 @@ main page
 + Stable-Diffusion WebUI를 활용한 프롬프트 엔지니어링으로 얼굴형에 맞는 헤어 스타일 추천   
 
 ## NLP  
+LLM-based Music Recommender Chatbot (2025.05 - Present) [🔗 Details](https://github.com/kthnineone/streamlit-llm-music-recommend)
++ LLM으로 Agent를 구현하여 음악 추천 챗봇 구현  
++ Streamlit으로 화면, MongoDB로 DB 구현  
++ 모니터링 대시보드 구현
++ 선호도 데이터와 웹 검색을 Supervisor Agent로 제어 
+
 LangChain 실습 (2025.01 - Present) [🔗 Details](https://github.com/kthnineone/llm-practice):   
 + LangChain을 이용한 Prompt Engineering  
 + LangChain을 이용한 RAG  
@@ -18,7 +24,7 @@ LangChain 실습 (2025.01 - Present) [🔗 Details](https://github.com/kthnineon
 + 부서별로 직급별로 권한이 다를 때의 RAG
 + LLM을 활용한 Table와 Chart 생성  
 
-LLM-based Recommender Systems (2025.03 - Present) [🔗 Details](https://github.com/kthnineone/llm-recommend-movie)
+LLM-based Movie Recommender Systems (2025.03 - 2025.05) [🔗 Details](https://github.com/kthnineone/llm-recommend-movie)
 + LLM (Gemini API)을 활용한 영화 추천이 포함된 별점 사이트 구현  
 + React, Typescript, Vite로 프론트엔드 구현. 디자인은 배제. 
 + FastAPI를 사용해 영화 이름 검색, 유저 추천 아이템 생성, 유저 추천 아이템 검색, 별점 등록 구현 
